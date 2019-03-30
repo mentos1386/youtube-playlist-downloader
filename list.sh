@@ -1,8 +1,8 @@
 #!/bin/bash
-DIR=$(dirname -- "$0");
+set -o pipefail
 
 # Best music evah
-$DIR/downloader.sh PLimMTE4zNFwFykzhNzvNWeIwdBrfj33X_ audio
+./downloader.sh PLimMTE4zNFwFykzhNzvNWeIwdBrfj33X_ audio
 
 # Interesting
-$DIR/downloader.sh PLimMTE4zNFwEbDtHBLpD6vh8xxqwQ3dP7 video
+./downloader.sh PLimMTE4zNFwEbDtHBLpD6vh8xxqwQ3dP7 video
