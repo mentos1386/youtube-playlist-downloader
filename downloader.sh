@@ -5,10 +5,6 @@ set -o pipefail
 PLAYLIST_ID=$1
 TYPE=$2
 
-# Constants
-DATA_DIR=${DATA_DIR}
-PROGRESS_DATA_DIR="$DIR/progress"
-
 # Verify that type is provided
 if [[ $TYPE != 'video' && $TYPE != 'audio' ]]; then
 	echo "Invalid type! Should be 'video' or 'audio'"
